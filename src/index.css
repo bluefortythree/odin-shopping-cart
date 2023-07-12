@@ -11,3 +11,86 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#main {
+  display: flex;
+  background: url('https://images.pexels.com/photos/4916298/pexels-photo-4916298.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 75vh;
+  outline: 1px solid black;
+}
+
+#welcome, #description {
+  text-align: center;
+}
+
+#welcome {
+  font-weight: 600;
+  color: beige;
+  font-size: 80px;
+  margin-bottom: 10vh;
+  -webkit-text-stroke: 3px black;
+}
+
+#description {
+  font-size: 40px;
+  font-weight: 600;
+  color: yellow;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  -webkit-text-stroke: 1px black;
+}
+
+#shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  background-color: orange;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+  outline: 1px solid black;
+  height: 75vh;
+}
+
+#shop > div {
+  outline: 1px solid black;
+  margin: 20px 80px 20px 80px;
+  padding: 10px;
+  background-color: beige;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  outline: 1px solid black;
+}
+
+#navbar > div {
+  margin-top: 3vh;
+  text-align: center;
+  width: 20%;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  outline: 1px solid black;
+}
+
+#footer > div {
+  width: 50%;
+  text-align: center;
+}
